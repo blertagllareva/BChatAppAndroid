@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.android.BluetoothChatApp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="19dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/disconnected" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:text="Pajisja e palidhur" />
+    </TableRow>
+</TableLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:paddingLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext"
+            android:hint="Mesazhi: " />
+
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="33dp"
+            android:layout_margin="4dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/send"
+             />
+    </LinearLayout>
+</LinearLayout>

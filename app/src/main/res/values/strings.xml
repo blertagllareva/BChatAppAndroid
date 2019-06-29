@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aplikacioni BChat</string>
+    <string name="none_paired">Nuk jane gjetur pajisje per çiftim</string>
+    <string name="none_found">Nuk jane gjetur pajisje</string>
+</resources>
